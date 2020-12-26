@@ -15,6 +15,11 @@
 		E1F3F51A2596869F00095E93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F5182596869F00095E93 /* LaunchScreen.storyboard */; };
 		E1F3F525259686A000095E93 /* CoreDataSyncCloudKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F524259686A000095E93 /* CoreDataSyncCloudKitTests.swift */; };
 		E1F3F530259686A000095E93 /* CoreDataSyncCloudKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F52F259686A000095E93 /* CoreDataSyncCloudKitUITests.swift */; };
+		E1F3F543259722B700095E93 /* LocalStorageModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F541259722B700095E93 /* LocalStorageModel.xcdatamodeld */; };
+		E1F3F5482597709F00095E93 /* User+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F5472597709F00095E93 /* User+Extension.swift */; };
+		E1F3F54E2597D44800095E93 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3F54C2597D44800095E93 /* TableViewCell.swift */; };
+		E1F3F54F2597D44800095E93 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1F3F54D2597D44800095E93 /* TableViewCell.xib */; };
+		E1F3F5592597E5FC00095E93 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F3F5582597E5FC00095E93 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,12 @@
 		E1F3F52B259686A000095E93 /* CoreDataSyncCloudKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataSyncCloudKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F3F52F259686A000095E93 /* CoreDataSyncCloudKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSyncCloudKitUITests.swift; sourceTree = "<group>"; };
 		E1F3F531259686A000095E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1F3F542259722B700095E93 /* LocalStorageModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalStorageModel.xcdatamodel; sourceTree = "<group>"; };
+		E1F3F5472597709F00095E93 /* User+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Extension.swift"; sourceTree = "<group>"; };
+		E1F3F54C2597D44800095E93 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E1F3F54D2597D44800095E93 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		E1F3F5532597E58400095E93 /* CoreDataSyncCloudKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreDataSyncCloudKit.entitlements; sourceTree = "<group>"; };
+		E1F3F5582597E5FC00095E93 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F3F5592597E5FC00095E93 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +95,7 @@
 				E1F3F523259686A000095E93 /* CoreDataSyncCloudKitTests */,
 				E1F3F52E259686A000095E93 /* CoreDataSyncCloudKitUITests */,
 				E1F3F50B2596869E00095E93 /* Products */,
+				E1F3F5572597E5FC00095E93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +112,7 @@
 		E1F3F50C2596869E00095E93 /* CoreDataSyncCloudKit */ = {
 			isa = PBXGroup;
 			children = (
+				E1F3F5532597E58400095E93 /* CoreDataSyncCloudKit.entitlements */,
 				E1F3F50D2596869E00095E93 /* AppDelegate.swift */,
 				E1F3F50F2596869E00095E93 /* SceneDelegate.swift */,
 				E1F3F5112596869E00095E93 /* ViewController.swift */,
@@ -106,6 +120,10 @@
 				E1F3F5162596869F00095E93 /* Assets.xcassets */,
 				E1F3F5182596869F00095E93 /* LaunchScreen.storyboard */,
 				E1F3F51B2596869F00095E93 /* Info.plist */,
+				E1F3F541259722B700095E93 /* LocalStorageModel.xcdatamodeld */,
+				E1F3F5472597709F00095E93 /* User+Extension.swift */,
+				E1F3F54C2597D44800095E93 /* TableViewCell.swift */,
+				E1F3F54D2597D44800095E93 /* TableViewCell.xib */,
 			);
 			path = CoreDataSyncCloudKit;
 			sourceTree = "<group>";
@@ -126,6 +144,14 @@
 				E1F3F531259686A000095E93 /* Info.plist */,
 			);
 			path = CoreDataSyncCloudKitUITests;
+			sourceTree = "<group>";
+		};
+		E1F3F5572597E5FC00095E93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1F3F5582597E5FC00095E93 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1F3F51A2596869F00095E93 /* LaunchScreen.storyboard in Resources */,
+				E1F3F54F2597D44800095E93 /* TableViewCell.xib in Resources */,
 				E1F3F5172596869F00095E93 /* Assets.xcassets in Resources */,
 				E1F3F5152596869E00095E93 /* Main.storyboard in Resources */,
 			);
@@ -261,6 +288,9 @@
 				E1F3F5122596869E00095E93 /* ViewController.swift in Sources */,
 				E1F3F50E2596869E00095E93 /* AppDelegate.swift in Sources */,
 				E1F3F5102596869E00095E93 /* SceneDelegate.swift in Sources */,
+				E1F3F54E2597D44800095E93 /* TableViewCell.swift in Sources */,
+				E1F3F543259722B700095E93 /* LocalStorageModel.xcdatamodeld in Sources */,
+				E1F3F5482597709F00095E93 /* User+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CoreDataSyncCloudKit/CoreDataSyncCloudKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9P78Q47KY2;
 				INFOPLIST_FILE = CoreDataSyncCloudKit/Info.plist;
@@ -455,6 +486,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CoreDataSyncCloudKit/CoreDataSyncCloudKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9P78Q47KY2;
 				INFOPLIST_FILE = CoreDataSyncCloudKit/Info.plist;
@@ -593,6 +625,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E1F3F541259722B700095E93 /* LocalStorageModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E1F3F542259722B700095E93 /* LocalStorageModel.xcdatamodel */,
+			);
+			currentVersion = E1F3F542259722B700095E93 /* LocalStorageModel.xcdatamodel */;
+			path = LocalStorageModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E1F3F5022596869E00095E93 /* Project object */;
 }
